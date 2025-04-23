@@ -58,7 +58,7 @@ export default function Header() {
                     {item.name}
                   </Link>
                 ))}
-                <Link href="/contact" className="mt-4 rounded-none bg-black text-white">GET STARTED</Link>
+                <Link href={"/contact" }className="mt-4 rounded-none bg-black text-white">GET STARTED</Link>
               </div>
             </SheetContent>
           </Sheet>
