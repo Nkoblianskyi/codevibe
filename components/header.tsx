@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { ArrowRight, Menu, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -34,9 +34,12 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <Button variant="default" size="sm" className="rounded-none bg-black text-white">
-            GET STARTED
-          </Button>
+          <Link href={'/contact'}>
+            <Button className="rounded-none bg-black text-white mt-10">
+              GET STARTED
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -58,7 +61,7 @@ export default function Header() {
                     {item.name}
                   </Link>
                 ))}
-                <Link href={"/contact" }className="mt-4 rounded-none bg-black text-white">GET STARTED</Link>
+                <Link href={"/contact"} className="mt-4 rounded-none bg-black text-white">GET STARTED</Link>
               </div>
             </SheetContent>
           </Sheet>
