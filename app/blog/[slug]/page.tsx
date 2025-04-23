@@ -41,7 +41,7 @@ const posts = {
   },
   "seo-best-practices": {
     title: "SEO Best Practices for 2025",
-    date: "March 15, 2023",
+    date: "March 15, 2025",
     readTime: "10 min read",
     image: "/seo-2.png",
     content: `
