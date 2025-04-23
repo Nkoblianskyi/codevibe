@@ -5,32 +5,6 @@ import { ArrowRight, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function AboutPage() {
-  const teamMembers = [
-    {
-      name: "Sarah Johnson",
-      position: "CEO & Founder",
-      bio: "With over 15 years of experience in digital marketing, Sarah founded CodeVibeCo with a vision to help businesses achieve sustainable growth through innovative digital strategies.",
-      image: "/placeholder.svg?height=400&width=400",
-    },
-    {
-      name: "Michael Chen",
-      position: "CTO",
-      bio: "Michael leads our technical team, bringing 12 years of experience in web development and a passion for creating seamless digital experiences.",
-      image: "/placeholder.svg?height=400&width=400",
-    },
-    {
-      name: "Emma Rodriguez",
-      position: "Creative Director",
-      bio: "Emma's creative vision has shaped countless successful campaigns. She specializes in brand identity and visual storytelling.",
-      image: "/placeholder.svg?height=400&width=400",
-    },
-    {
-      name: "David Kim",
-      position: "Head of SEO",
-      bio: "David is an SEO expert with a proven track record of helping businesses achieve top rankings and increase organic traffic.",
-      image: "/placeholder.svg?height=400&width=400",
-    },
-  ]
 
   const values = [
     {
@@ -129,31 +103,6 @@ export default function AboutPage() {
               <div key={index} className="p-6 border text-center">
                 <h3 className="text-xl font-bold mb-4">{value.title}</h3>
                 <p>{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Team Section */}
-      <section className="py-12 md:py-24 bg-muted/30">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-6 text-center">Meet Our Team</h2>
-          <p className="text-lg text-center max-w-3xl mx-auto mb-12">
-            Our talented team of digital experts is passionate about helping businesses succeed online. With diverse
-            skills and extensive experience, we work together to deliver exceptional results for our clients.
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white border overflow-hidden">
-                <div className="aspect-square relative">
-                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-xl mb-1">{member.name}</h3>
-                  <p className="text-muted-foreground mb-4">{member.position}</p>
-                  <p>{member.bio}</p>
-                </div>
               </div>
             ))}
           </div>

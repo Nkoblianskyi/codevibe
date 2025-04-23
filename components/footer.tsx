@@ -16,17 +16,6 @@ export default function Footer() {
             <p className="text-muted-foreground mb-4">
               A full-service digital agency specializing in helping businesses grow online.
             </p>
-            <div className="flex gap-4">
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                FB
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                TW
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                IG
-              </Link>
-            </div>
           </div>
           <div>
             <h3 className="font-bold mb-4">LINKS</h3>
