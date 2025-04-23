@@ -35,7 +35,7 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-4">
           <Link href={'/contact'}>
-            <Button className="rounded-none bg-black text-white mt-10">
+            <Button className="rounded-none bg-black text-white">
               GET STARTED
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
