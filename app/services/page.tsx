@@ -15,7 +15,7 @@ export default function ServicesPage() {
       title: "PPC SERVICES",
       description: "Drive targeted traffic and increase conversions with our expert PPC management.",
       slug: "ppc-services",
-      icon: "/collab-bro.png",
+      icon: "/ppc-2.png",
     },
     {
       title: "AFFILIATE SERVICES",
