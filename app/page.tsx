@@ -59,7 +59,7 @@ export default function Home() {
             <Link href="/services/ppc-services" className="group">
               <div className="text-center space-y-3 p-6 border transition-all duration-300 hover:shadow-md">
                 <div className="mx-auto h-16 w-16 flex items-center justify-center border rounded-full">
-                  <Image src="/collab-bro.png" alt="PPC Services" width={32} height={32} />
+                  <Image src="/ppc-2.png" alt="PPC Services" width={32} height={32} />
                 </div>
                 <h3 className="font-medium group-hover:underline">PPC SERVICES</h3>
                 <p className="text-muted-foreground text-sm">Drive targeted traffic with pay-per-click advertising</p>

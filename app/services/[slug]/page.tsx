@@ -29,7 +29,7 @@ const services = {
     description: "Drive targeted traffic and increase conversions with our expert PPC management.",
     longDescription:
       "Our PPC services help you maximize your advertising budget by creating targeted campaigns that reach your ideal customers at the right time. We manage campaigns across Google Ads, Bing Ads, and social media platforms to drive qualified traffic to your website and increase conversions.",
-    image: "/collab-bro.png",
+    image: "/ppc-2.png",
     features: [
       "Campaign strategy and planning",
       "Keyword research and selection",
