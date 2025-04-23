@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button"
 // Define the blog post data
 const posts = {
   "digital-marketing-trends": {
-    title: "Digital Marketing Trends for 2023",
-    date: "April 20, 2023",
+    title: "Digital Marketing Trends for 2025",
+    date: "April 20, 2025",
     readTime: "8 min read",
     image: "/digital.png",
     content: `
@@ -40,7 +40,7 @@ const posts = {
     `,
   },
   "seo-best-practices": {
-    title: "SEO Best Practices for 2023",
+    title: "SEO Best Practices for 2025",
     date: "March 15, 2023",
     readTime: "10 min read",
     image: "/seo-2.png",
@@ -76,7 +76,7 @@ const posts = {
   },
   "social-media-strategy": {
     title: "Building an Effective Social Media Strategy",
-    date: "February 28, 2023",
+    date: "February 28, 2025",
     readTime: "7 min read",
     image: "/social-2.png",
     content: `
@@ -116,7 +116,7 @@ const posts = {
   },
   "content-marketing-power": {
     title: "The Power of Content Marketing",
-    date: "January 22, 2023",
+    date: "January 22, 2025",
     readTime: "9 min read",
     image: "/power.png",
     content: `
@@ -150,7 +150,7 @@ const posts = {
   },
   "ppc-beginners-guide": {
     title: "PPC Advertising: A Beginner's Guide",
-    date: "December 10, 2022",
+    date: "December 10, 2025",
     readTime: "8 min read",
     image: "/ppc.png",
     content: `
@@ -193,7 +193,7 @@ const posts = {
   },
   "email-marketing-strategies": {
     title: "Email Marketing Strategies That Convert",
-    date: "November 5, 2022",
+    date: "November 5, 2025",
     readTime: "6 min read",
     image: "/email.png",
     content: `

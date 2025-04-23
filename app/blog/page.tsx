@@ -12,14 +12,14 @@ export default function BlogPage() {
 
   const posts = [
     {
-      title: "Digital Marketing Trends for 2023",
+      title: "Digital Marketing Trends for 2025",
       slug: "digital-marketing-trends",
       excerpt: "Explore the latest trends shaping the digital marketing landscape this year.",
       date: "April 20, 2023",
       image: "/digital.png",
     },
     {
-      title: "SEO Best Practices for 2023",
+      title: "SEO Best Practices for 2025",
       slug: "seo-best-practices",
       excerpt: "Learn the most effective SEO strategies to improve your website's visibility.",
       date: "March 15, 2023",
@@ -36,21 +36,21 @@ export default function BlogPage() {
       title: "The Power of Content Marketing",
       slug: "content-marketing-power",
       excerpt: "How content marketing can transform your business and drive sustainable growth.",
-      date: "January 22, 2023",
+      date: "January 22, 2025",
       image: "/power.png",
     },
     {
       title: "PPC Advertising: A Beginner's Guide",
       slug: "ppc-beginners-guide",
       excerpt: "Everything you need to know to get started with pay-per-click advertising.",
-      date: "December 10, 2022",
+      date: "December 10, 2025",
       image: "/ppc.png",
     },
     {
       title: "Email Marketing Strategies That Convert",
       slug: "email-marketing-strategies",
       excerpt: "Proven email marketing tactics to increase open rates and conversions.",
-      date: "November 5, 2022",
+      date: "November 5, 2025",
       image: "/email.png",
     },
   ]
