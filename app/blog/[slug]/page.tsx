@@ -1,3 +1,10 @@
+import Image from "next/image"
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import { ArrowRight } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+
 // Define the blog post data
 const posts = {
   "digital-marketing-trends": {
@@ -30,7 +37,7 @@ const posts = {
       
       <h2>Conclusion</h2>
       <p>Staying ahead in digital marketing requires adaptability and a willingness to embrace new technologies and strategies. By keeping an eye on these trends and thoughtfully incorporating them into your marketing approach, you can create more effective campaigns that resonate with your audience and drive business growth in 2023 and beyond.</p>
-    `
+    `,
   },
   "seo-best-practices": {
     title: "SEO Best Practices for 2023",
@@ -65,7 +72,7 @@ const posts = {
       
       <h2>Conclusion</h2>
       <p>SEO is not about quick fixes or tricks; it's about creating a website that provides genuine value to users while following technical best practices that help search engines understand and rank your content. By focusing on these SEO best practices in 2023, you can improve your website's visibility and attract more qualified traffic.</p>
-    `
+    `,
   },
   "social-media-strategy": {
     title: "Building an Effective Social Media Strategy",
@@ -105,7 +112,7 @@ const posts = {
       
       <h2>Conclusion</h2>
       <p>Building an effective social media strategy requires careful planning, consistent execution, and ongoing optimization. By following these steps and staying adaptable in the face of platform changes and evolving consumer behaviors, you can create a social media presence that drives meaningful results for your business.</p>
-    `
+    `,
   },
   "content-marketing-power": {
     title: "The Power of Content Marketing",
@@ -139,7 +146,7 @@ const posts = {
       
       <h2>Conclusion</h2>
       <p>Content marketing is not a quick-fix solution but a long-term strategy that builds momentum over time. By consistently creating valuable content that addresses your audience's needs and interests, you can establish your brand as a trusted authority, attract qualified leads, and drive sustainable business growth.</p>
-    `
+    `,
   },
   "ppc-beginners-guide": {
     title: "PPC Advertising: A Beginner's Guide",
@@ -182,7 +189,7 @@ const posts = {
       <h2>Conclusion</h2>
       <p>PPC advertising can be a highly effective way to drive targeted traffic to your website and generate leads or sales. While it requires an initial investment of time and money, the ability to precisely target your audience and measure results makes it a valuable component of a comprehensive digital marketing strategy.</p>
       <p>As you gain experience with PPC, you can refine your approach, testing different keywords, ad copy, and landing pages to optimize your campaigns for better performance and ROI.</p>
-    `
+    `,
   },
   "email-marketing-strategies": {
     title: "Email Marketing Strategies That Convert",
@@ -196,4 +203,119 @@ const posts = {
       <p>The foundation of successful email marketing is a high-quality list of subscribers who have explicitly opted in to receive your communications. Focus on organic list growth through website sign-up forms, content upgrades, webinars, and other lead magnets that attract people genuinely interested in your offerings.</p>
       <p>Avoid purchasing email lists, as these typically result in low engagement, high unsubscribe rates, and potential damage to your sender reputation.</p>
       
-      <h2>Segment Your Audience</h
+      <h2>Segment Your Audience</h2>
+      <p>Not all subscribers are interested in the same content. Segmenting your email list based on demographics, behavior, purchase history, or engagement level allows you to send more targeted, relevant messages that resonate with specific groups of subscribers.</p>
+      <p>Studies consistently show that segmented email campaigns perform better than non-segmented campaigns, with higher open rates, click-through rates, and conversions.</p>
+      
+      <h2>Craft Compelling Subject Lines</h2>
+      <p>The subject line is the first thing recipients see and often determines whether they open your email. A compelling subject line should be concise, create curiosity or urgency, and give recipients a reason to open the email.</p>
+      <p>A/B testing different subject lines can help you understand what resonates with your audience and improve your open rates over time.</p>
+      
+      <h2>Personalize Your Emails</h2>
+      <p>Personalization goes beyond simply including the recipient's name in the subject line or greeting. It involves tailoring the content of your emails based on the recipient's interests, behavior, or stage in the customer journey.</p>
+      <p>Personalized emails deliver six times higher transaction rates, yet 70% of brands fail to use them. By leveraging the data you have about your subscribers, you can create more relevant, engaging email experiences.</p>
+      
+      <h2>Optimize for Mobile</h2>
+      <p>With more than 60% of email opens occurring on mobile devices, it's essential to ensure your emails look good and function well on smartphones and tablets.</p>
+      <p>Use responsive email templates, keep your design simple and clean, use a single-column layout, make buttons large enough to tap easily, and test your emails across different devices before sending.</p>
+      
+      <h2>Include Clear Calls to Action</h2>
+      <p>Every email should have a clear purpose and a corresponding call to action (CTA) that tells recipients what you want them to do next. Whether it's making a purchase, downloading a resource, or reading a blog post, your CTA should be prominent, compelling, and easy to click.</p>
+      <p>Limit the number of CTAs in each email to avoid overwhelming recipients and diluting your message. In most cases, focusing on a single, primary CTA will yield better results.</p>
+      
+      <h2>Test and Optimize</h2>
+      <p>Continuous testing and optimization are key to improving your email marketing results over time. Test different elements of your emails, such as subject lines, sender names, content, design, CTAs, and sending times to identify what works best for your audience.</p>
+      <p>Use the insights gained from these tests to refine your approach and create more effective email campaigns.</p>
+      
+      <h2>Conclusion</h2>
+      <p>Email marketing continues to be a powerful tool for engaging with your audience and driving conversions. By focusing on building a quality list, segmenting your audience, crafting compelling subject lines, personalizing your emails, optimizing for mobile, including clear CTAs, and continuously testing and optimizing, you can create email campaigns that deliver impressive results for your business.</p>
+    `,
+  },
+}
+
+export default function BlogPostPage({ params }: { params: { slug: string } }) {
+  const post = posts[params.slug as keyof typeof posts]
+
+  if (!post) {
+    notFound()
+  }
+
+  return (
+    <>
+      <section className="bg-black text-white py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{post.title}</h1>
+            <div className="flex items-center gap-4">
+              <span>{post.date}</span>
+              <span className="w-1 h-1 rounded-full bg-white"></span>
+              <span>{post.readTime}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-24">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-12">
+              <Image
+                src={post.image || "/placeholder.svg"}
+                alt={post.title}
+                width={1200}
+                height={600}
+                className="w-full object-cover"
+              />
+            </div>
+            <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-24 bg-muted/30">
+        <div className="container">
+          <h2 className="text-3xl font-bold mb-12 text-center">Related Articles</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {Object.entries(posts)
+              .filter(([slug]) => slug !== params.slug)
+              .slice(0, 3)
+              .map(([slug, postData]) => (
+                <Link key={slug} href={`/blog/${slug}`} className="group">
+                  <div className="border overflow-hidden bg-white">
+                    <div className="relative h-48 overflow-hidden">
+                      <Image
+                        src={postData.image || "/placeholder.svg"}
+                        alt={postData.title}
+                        width={600}
+                        height={400}
+                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <p className="text-sm text-muted-foreground mb-2">{postData.date}</p>
+                      <h3 className="font-bold text-xl mb-2 group-hover:underline">{postData.title}</h3>
+                      <p className="text-muted-foreground">
+                        {postData.content
+                          .replace(/<[^>]*>/g, "")
+                          .slice(0, 100)
+                          .trim()}
+                        ...
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+          </div>
+          <div className="text-center mt-8">
+            <Button asChild className="rounded-none bg-black text-white">
+              <Link href="/blog">
+                VIEW ALL ARTICLES
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
