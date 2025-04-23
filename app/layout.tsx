@@ -5,13 +5,13 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import CookieConsent from "@/components/cookie-consent"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "CodeVibeCo - Digital Agency",
   description: "A full-service digital agency specializing in helping businesses grow online.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -27,6 +27,7 @@ export default function RootLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <CookieConsent />
           </div>
         </ThemeProvider>
       </body>

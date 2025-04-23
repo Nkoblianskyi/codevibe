@@ -12,7 +12,7 @@ const services = {
     description: "Improve your search engine rankings and visibility with our comprehensive SEO services.",
     longDescription:
       "Our SEO services are designed to improve your website's visibility in search engine results, driving more organic traffic and increasing your online presence. We use a combination of on-page optimization, technical SEO, content strategy, and link building to help your website rank higher in search results.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/seo.png",
     features: [
       "Comprehensive website audit",
       "Keyword research and strategy",
@@ -29,7 +29,7 @@ const services = {
     description: "Drive targeted traffic and increase conversions with our expert PPC management.",
     longDescription:
       "Our PPC services help you maximize your advertising budget by creating targeted campaigns that reach your ideal customers at the right time. We manage campaigns across Google Ads, Bing Ads, and social media platforms to drive qualified traffic to your website and increase conversions.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/collab-bro.png",
     features: [
       "Campaign strategy and planning",
       "Keyword research and selection",
@@ -46,7 +46,7 @@ const services = {
     description: "Expand your reach and increase sales through strategic affiliate partnerships.",
     longDescription:
       "Our affiliate marketing services help you build and manage a network of partners who promote your products or services in exchange for a commission. We handle everything from affiliate recruitment to program management, helping you expand your reach and increase sales without upfront costs.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/social.png",
     features: [
       "Affiliate program setup and management",
       "Partner recruitment and onboarding",
@@ -63,7 +63,7 @@ const services = {
     description: "Engage your audience with compelling, SEO-optimized content that converts.",
     longDescription:
       "Our content services provide you with high-quality, engaging content that resonates with your target audience and supports your marketing goals. From blog posts and articles to social media content and email newsletters, we create content that drives traffic, engages readers, and converts visitors into customers.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/content.png",
     features: [
       "Content strategy development",
       "Blog posts and articles",
@@ -80,7 +80,7 @@ const services = {
     description: "Build your brand presence and engage with your audience across social platforms.",
     longDescription:
       "Our social media services help you build and maintain a strong presence on the platforms where your audience spends their time. We develop and implement strategies that increase brand awareness, engage your followers, and drive traffic to your website, ultimately supporting your business goals.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/affiliate.png",
     features: [
       "Social media strategy development",
       "Profile setup and optimization",
@@ -97,7 +97,7 @@ const services = {
     description: "Comprehensive marketing strategies tailored to your business goals and target audience.",
     longDescription:
       "Our marketing services provide a holistic approach to promoting your business online. We develop and implement comprehensive strategies that combine various digital marketing channels to achieve your business goals, whether that's increasing brand awareness, generating leads, or driving sales.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/marketing.png",
     features: [
       "Marketing strategy development",
       "Brand positioning",

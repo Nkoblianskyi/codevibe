@@ -103,16 +103,6 @@ export default function ContactPage() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      placeholder="+1 (555) 123-4567"
-                      value={formData.phone}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="space-y-2">
                     <Label htmlFor="subject">Subject</Label>
                     <Input
                       id="subject"
@@ -158,11 +148,6 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <Phone className="h-6 w-6 text-black flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-bold mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+420 123 456 789</p>
-                    </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Mail className="h-6 w-6 text-black flex-shrink-0 mt-1" />
@@ -177,7 +162,7 @@ export default function ContactPage() {
               <div className="border p-4">
                 <div className="aspect-video relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600&text=Map"
+                    src="/write.png"
                     alt="Office location map"
                     fill
                     className="object-cover"

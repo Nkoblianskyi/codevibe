@@ -11,7 +11,7 @@ const posts = {
     title: "Digital Marketing Trends for 2023",
     date: "April 20, 2023",
     readTime: "8 min read",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/digital.png",
     content: `
       <p>The digital marketing landscape is constantly evolving, with new technologies, platforms, and strategies emerging every year. As we move through 2023, several key trends are shaping how businesses connect with their audiences online.</p>
       
@@ -43,7 +43,7 @@ const posts = {
     title: "SEO Best Practices for 2023",
     date: "March 15, 2023",
     readTime: "10 min read",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/seo-2.png",
     content: `
       <p>Search Engine Optimization (SEO) continues to be a critical component of digital marketing strategy. As search algorithms evolve and user behavior changes, staying updated with the latest SEO best practices is essential for maintaining and improving your website's visibility in search results.</p>
       
@@ -78,7 +78,7 @@ const posts = {
     title: "Building an Effective Social Media Strategy",
     date: "February 28, 2023",
     readTime: "7 min read",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/social-2.png",
     content: `
       <p>A well-crafted social media strategy is essential for businesses looking to build brand awareness, engage with their audience, and drive conversions. With the ever-changing social media landscape, developing an effective strategy requires careful planning and execution.</p>
       
@@ -118,7 +118,7 @@ const posts = {
     title: "The Power of Content Marketing",
     date: "January 22, 2023",
     readTime: "9 min read",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/power.png",
     content: `
       <p>Content marketing has emerged as one of the most effective strategies for businesses to connect with their audience, build brand authority, and drive sustainable growth. Unlike traditional advertising, which interrupts consumers with promotional messages, content marketing provides value through informative, educational, or entertaining content.</p>
       
@@ -152,7 +152,7 @@ const posts = {
     title: "PPC Advertising: A Beginner's Guide",
     date: "December 10, 2022",
     readTime: "8 min read",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/ppc.png",
     content: `
       <p>Pay-Per-Click (PPC) advertising is a powerful digital marketing strategy that allows businesses to display ads in search results and on websites, paying only when users click on their ads. For beginners, PPC can seem complex and intimidating, but understanding the basics can help you leverage this channel effectively.</p>
       
@@ -195,7 +195,7 @@ const posts = {
     title: "Email Marketing Strategies That Convert",
     date: "November 5, 2022",
     readTime: "6 min read",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/email.png",
     content: `
       <p>Email marketing remains one of the most effective digital marketing channels, offering an impressive return on investment when done correctly. With the right strategies, you can create email campaigns that engage your audience and drive conversions.</p>
       

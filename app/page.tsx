@@ -18,22 +18,21 @@ export default function Home() {
               We help ambitious businesses like yours generate more profits by building awareness, driving web traffic,
               connecting with customers, and growing overall sales.
             </p>
-            <Button className="rounded-none bg-black text-white">
-              GET STARTED
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href={'/contact'}>
+              <Button className="rounded-none bg-black text-white mt-10">
+                GET STARTED
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=600&width=800"
+              src="/Company-pana.png"
               alt="Digital agency team"
               width={800}
-              height={600}
+              height={800}
               className="object-cover"
             />
-            <div className="absolute top-4 right-4">
-              <Plus className="h-6 w-6" />
-            </div>
           </div>
         </div>
       </section>
@@ -51,7 +50,7 @@ export default function Home() {
             <Link href="/services/seo-services" className="group">
               <div className="text-center space-y-3 p-6 border transition-all duration-300 hover:shadow-md">
                 <div className="mx-auto h-16 w-16 flex items-center justify-center border rounded-full">
-                  <Image src="/placeholder.svg?height=32&width=32" alt="SEO Services" width={32} height={32} />
+                  <Image src="/seo.png" alt="SEO Services" width={32} height={32} />
                 </div>
                 <h3 className="font-medium group-hover:underline">SEO SERVICES</h3>
                 <p className="text-muted-foreground text-sm">Improve your search engine rankings and visibility</p>
@@ -60,7 +59,7 @@ export default function Home() {
             <Link href="/services/ppc-services" className="group">
               <div className="text-center space-y-3 p-6 border transition-all duration-300 hover:shadow-md">
                 <div className="mx-auto h-16 w-16 flex items-center justify-center border rounded-full">
-                  <Image src="/placeholder.svg?height=32&width=32" alt="PPC Services" width={32} height={32} />
+                  <Image src="/collab-bro.png" alt="PPC Services" width={32} height={32} />
                 </div>
                 <h3 className="font-medium group-hover:underline">PPC SERVICES</h3>
                 <p className="text-muted-foreground text-sm">Drive targeted traffic with pay-per-click advertising</p>
@@ -69,7 +68,7 @@ export default function Home() {
             <Link href="/services/affiliate-services" className="group">
               <div className="text-center space-y-3 p-6 border transition-all duration-300 hover:shadow-md">
                 <div className="mx-auto h-16 w-16 flex items-center justify-center border rounded-full">
-                  <Image src="/placeholder.svg?height=32&width=32" alt="Affiliate Services" width={32} height={32} />
+                  <Image src="/social.png" alt="Affiliate Services" width={32} height={32} />
                 </div>
                 <h3 className="font-medium group-hover:underline">AFFILIATE SERVICES</h3>
                 <p className="text-muted-foreground text-sm">Expand your reach with strategic affiliate partnerships</p>
@@ -78,7 +77,7 @@ export default function Home() {
             <Link href="/services/content-services" className="group">
               <div className="text-center space-y-3 p-6 border transition-all duration-300 hover:shadow-md">
                 <div className="mx-auto h-16 w-16 flex items-center justify-center border rounded-full">
-                  <Image src="/placeholder.svg?height=32&width=32" alt="Content Services" width={32} height={32} />
+                  <Image src="/content.png" alt="Content Services" width={32} height={32} />
                 </div>
                 <h3 className="font-medium group-hover:underline">CONTENT SERVICES</h3>
                 <p className="text-muted-foreground text-sm">Engage your audience with compelling content</p>
@@ -87,7 +86,7 @@ export default function Home() {
             <Link href="/services/social-media-services" className="group">
               <div className="text-center space-y-3 p-6 border transition-all duration-300 hover:shadow-md">
                 <div className="mx-auto h-16 w-16 flex items-center justify-center border rounded-full">
-                  <Image src="/placeholder.svg?height=32&width=32" alt="Social Media Services" width={32} height={32} />
+                  <Image src="/affiliate.png" alt="Social Media Services" width={32} height={32} />
                 </div>
                 <h3 className="font-medium group-hover:underline">SOCIAL MEDIA SERVICES</h3>
                 <p className="text-muted-foreground text-sm">Build your brand presence across social platforms</p>
@@ -96,7 +95,7 @@ export default function Home() {
             <Link href="/services/marketing" className="group">
               <div className="text-center space-y-3 p-6 border transition-all duration-300 hover:shadow-md">
                 <div className="mx-auto h-16 w-16 flex items-center justify-center border rounded-full">
-                  <Image src="/placeholder.svg?height=32&width=32" alt="Marketing" width={32} height={32} />
+                  <Image src="/marketing.png" alt="Marketing" width={32} height={32} />
                 </div>
                 <h3 className="font-medium group-hover:underline">MARKETING</h3>
                 <p className="text-muted-foreground text-sm">Comprehensive marketing strategies for your business</p>
@@ -152,7 +151,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/team.png"
                 alt="Team working together"
                 width={800}
                 height={600}
@@ -201,7 +200,7 @@ export default function Home() {
               <div className="border overflow-hidden">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/digital.png"
                     alt="Digital Marketing Trends"
                     width={600}
                     height={400}
@@ -221,7 +220,7 @@ export default function Home() {
               <div className="border overflow-hidden">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/seo-2.png"
                     alt="SEO Best Practices"
                     width={600}
                     height={400}
@@ -241,7 +240,7 @@ export default function Home() {
               <div className="border overflow-hidden">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/social-2.png"
                     alt="Social Media Strategy"
                     width={600}
                     height={400}

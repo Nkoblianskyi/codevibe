@@ -61,7 +61,7 @@ export default function AboutPage() {
             </div>
             <div>
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/team.png"
                 alt="CodeVibeCo office"
                 width={800}
                 height={600}
@@ -115,7 +115,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/team-2.png"
                 alt="Team collaboration"
                 width={800}
                 height={600}
@@ -167,26 +167,6 @@ export default function AboutPage() {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Clients & Partners Section */}
-      <section className="py-12 md:py-24 bg-muted/30">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-12 text-center">Our Clients & Partners</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className="flex items-center justify-center p-6 bg-white border">
-                <Image
-                  src={`/placeholder.svg?height=80&width=120&text=Client+${index + 1}`}
-                  alt={`Client ${index + 1}`}
-                  width={120}
-                  height={80}
-                  className="opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-            ))}
           </div>
         </div>
       </section>

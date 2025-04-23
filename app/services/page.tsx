@@ -9,37 +9,37 @@ export default function ServicesPage() {
       title: "SEO SERVICES",
       description: "Improve your search engine rankings and visibility with our comprehensive SEO services.",
       slug: "seo-services",
-      icon: "/placeholder.svg?height=32&width=32",
+      icon: "/seo.png",
     },
     {
       title: "PPC SERVICES",
       description: "Drive targeted traffic and increase conversions with our expert PPC management.",
       slug: "ppc-services",
-      icon: "/placeholder.svg?height=32&width=32",
+      icon: "/collab-bro.png",
     },
     {
       title: "AFFILIATE SERVICES",
       description: "Expand your reach and increase sales through strategic affiliate partnerships.",
       slug: "affiliate-services",
-      icon: "/placeholder.svg?height=32&width=32",
+      icon: "/social.png",
     },
     {
       title: "CONTENT SERVICES",
       description: "Engage your audience with compelling, SEO-optimized content that converts.",
       slug: "content-services",
-      icon: "/placeholder.svg?height=32&width=32",
+      icon: "/content.png",
     },
     {
       title: "SOCIAL MEDIA SERVICES",
       description: "Build your brand presence and engage with your audience across social platforms.",
       slug: "social-media-services",
-      icon: "/placeholder.svg?height=32&width=32",
+      icon: "/affiliate.png",
     },
     {
       title: "MARKETING",
       description: "Comprehensive marketing strategies tailored to your business goals and target audience.",
       slug: "marketing",
-      icon: "/placeholder.svg?height=32&width=32",
+      icon: "/marketing.png",
     },
   ]
 
@@ -126,7 +126,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/our-service.png"
                 alt="Our services"
                 width={800}
                 height={600}

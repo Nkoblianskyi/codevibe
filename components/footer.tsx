@@ -82,7 +82,6 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="text-muted-foreground">Václavské náměstí 12, 110 00 Prague, Czech Republic</li>
               <li className="text-muted-foreground">info@codevibeco.com</li>
-              <li className="text-muted-foreground">+420 123 456 789</li>
             </ul>
           </div>
         </div>
