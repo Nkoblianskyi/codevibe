@@ -106,7 +106,7 @@ export default function ContactPage() {
                   <Button type="submit" className="rounded-none bg-black text-white w-full sm:w-auto" disabled={isSubmitting}>
                     {isSubmitting ? "Sending..." : "SEND MESSAGE"}
                   </Button>
-                  {sent && <p className="text-green-600 text-sm">Ваше повідомлення відправлено ✔</p>}
+                  {sent && <p className="text-green-600 text-sm"> Your message has been sent ✔</p>}
                 </div>
               </form>
             </div>
